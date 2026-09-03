@@ -129,7 +129,7 @@ export function BlogArticlePage() {
   return (
     <>
       <BlogDetailHero post={currentPost} category={category} />
-      <article className="bg-white px-5 py-14 sm:px-6 sm:py-16 lg:py-20">
+      <article data-scroll-reveal-skip="true" className="bg-white px-5 py-14 sm:px-6 sm:py-16 lg:py-20">
         <div className="admin-article-body mx-auto max-w-[860px] text-[1.08rem] leading-8 text-[#332f2b] sm:text-[1.13rem] sm:leading-9" dangerouslySetInnerHTML={{ __html: currentPost.content ?? '' }} />
       </article>
       {(related.length || categories.length) ? <ArticleDiscovery posts={related} categories={categories} /> : null}
