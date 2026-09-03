@@ -21,7 +21,7 @@ export type HeroSlide = {
 
 export const heroSlides: HeroSlide[] = [
   {
-    eyebrow: 'Technology for Business Growth',
+    eyebrow: 'Technology for Business Growth.',
     headline: 'Technology & Digital Growth Solutions for Businesses in Uganda',
     body: 'Laybrotech helps businesses build, run, and grow online through professional websites, web hosting, software solutions, and digital services.',
     primaryCta: {
