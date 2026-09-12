@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Footer } from '@/components/layout/Footer';
 import { ButtonLink } from '@/components/ui/Button';
 import { FinalCTA } from '@/sections/home/FinalCTA';
-import { Testimonials } from '@/sections/home/Testimonials';
 import { caseStudyProjects, projects, type Project } from '@/sections/home/ProjectsShowcase/projectData';
 
 const businessNeeds = [
@@ -21,11 +20,6 @@ export function ProjectsPage() {
       <ProjectDiscovery />
       <FeaturedCaseStudies />
       <BusinessNeeds />
-      <Testimonials
-        eyebrow="Client Feedback"
-        heading="What Clients Say About Working With Laybrotech."
-        copy="Hear from businesses and organisations that have worked with Laybrotech across websites, software, and digital projects."
-      />
       <FinalCTA heading="Have a project in mind?" primaryLabel="Start Your Project" primaryHref="/contact" secondaryLabel="Talk to Sales" secondaryHref="/contact" />
       <Footer />
     </>
