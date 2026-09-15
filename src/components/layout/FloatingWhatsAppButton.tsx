@@ -1,5 +1,4 @@
-const whatsappPhoneNumber = '+256 (0)200 923 164';
-const whatsappHref = 'https://wa.me/' + whatsappPhoneNumber.replace(/\D/g, '');
+import { whatsappHref } from '@/lib/contact';
 
 export function FloatingWhatsAppButton() {
   return (

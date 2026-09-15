@@ -1,10 +1,11 @@
-﻿import { type FormEvent, type ReactNode, useMemo, useState } from 'react';
+import { type FormEvent, type ReactNode, useState } from 'react';
 import { ArrowRight, Headphones, Mail, MapPin, MessageSquare, Phone } from 'lucide-react';
 
 import heroImage from '@/assets/images/home-hero-business-growth.webp';
 import { Footer } from '@/components/layout/Footer';
 import { ButtonLink } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
+import { whatsappHref } from '@/lib/contact';
 import { submitEnquiry } from '@/lib/enquiries';
 import { FinalCTA } from '@/sections/home/FinalCTA';
 
@@ -51,11 +52,6 @@ export function ContactPage() {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState<'success' | 'error' | ''>('');
   const [submitting, setSubmitting] = useState(false);
-
-  const whatsappHref = useMemo(() => {
-    const digits = phoneNumber.replace(/\D/g, '');
-    return digits ? 'https://wa.me/' + digits : undefined;
-  }, []);
 
   function updateValue(field: keyof FormValues, value: string) {
     setValues((current) => ({ ...current, [field]: value }));
