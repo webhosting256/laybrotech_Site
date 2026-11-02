@@ -64,7 +64,7 @@ export function Hero() {
         }
       }}
     >
-      <div className="relative min-h-[90svh] overflow-hidden">
+      <div className="relative min-h-[100vh] overflow-hidden">
         {heroSlides.map((slide, index) => (
           <HeroSlide key={slide.headline} slide={slide} isActive={activeIndex === index} isFirst={index === 0} />
         ))}

@@ -55,7 +55,7 @@ export function ProjectDetailPage() {
 
 function ProjectHero({ project }: { project: Project }) {
   return (
-    <section className="bg-white px-5 py-20 sm:px-6 sm:py-24 lg:py-28" aria-labelledby="project-detail-heading">
+    <section className="min-h-[100vh] bg-white px-5 py-20 sm:px-6 sm:py-24 lg:py-28" aria-labelledby="project-detail-heading">
       <div className="mx-auto w-full max-w-container">
         <div className="grid gap-10 lg:grid-cols-[0.42fr_0.58fr] lg:items-end lg:gap-16">
           <div>

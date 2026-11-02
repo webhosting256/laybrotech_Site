@@ -1,8 +1,13 @@
+import amosPortrait from '@/assets/images/Amos booklines.webp';
+import sandraPortrait from '@/assets/images/Sandra  hindsfeet.webp';
+import agnesPortrait from '@/assets/images/Dr.-Agnes-Atim-Apea-Profile.webp';
+
 export type Testimonial = {
   id: string;
   name: string;
   meta: string;
   initials: string;
+  avatarImage?: string;
   avatarTone: 'orange' | 'charcoal' | 'warm' | 'green';
   rating: number;
   title: string;
@@ -16,6 +21,7 @@ export const testimonials: Testimonial[] = [
     name: 'Amos',
     meta: 'Director, Booklines Africa',
     initials: 'A',
+    avatarImage: amosPortrait,
     avatarTone: 'orange',
     rating: 5,
     title: 'They are quick to respond to inquiries',
@@ -29,6 +35,7 @@ export const testimonials: Testimonial[] = [
     name: 'Sandra',
     meta: 'Director, Hindfeet Project',
     initials: 'S',
+    avatarImage: sandraPortrait,
     avatarTone: 'charcoal',
     rating: 5,
     title: 'They always respond timely',
@@ -68,6 +75,7 @@ export const testimonials: Testimonial[] = [
     name: 'Hon Dr Agness Apea',
     meta: 'Personal Website',
     initials: 'AA',
+    avatarImage: agnesPortrait,
     avatarTone: 'orange',
     rating: 5,
     title: 'They are the best designers',

@@ -54,7 +54,7 @@ export function BlogCategoryPage() {
 
   return (
     <>
-      <section className="bg-white px-5 py-16 sm:px-6 sm:py-20 lg:py-24" aria-labelledby="category-heading">
+      <section className="min-h-[100vh] bg-white px-5 py-16 sm:px-6 sm:py-20 lg:py-24" aria-labelledby="category-heading">
         <div className="mx-auto w-full max-w-container">
           <Link className="text-sm font-bold text-[#f25a05] transition-colors hover:text-[#d94f04]" to="/blog">Back to Blog</Link>
           <p className="type-eyebrow mt-8">Category</p>

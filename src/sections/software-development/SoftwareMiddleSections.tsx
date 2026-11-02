@@ -98,7 +98,7 @@ function usePinnedIndustryStory() {
   const [isPinnedMode, setIsPinnedMode] = useState(false);
 
   useEffect(() => {
-    const query = window.matchMedia('(min-width: 1024px) and (min-height: 720px) and (prefers-reduced-motion: no-preference)');
+    const query = window.matchMedia('(min-width: 1024px) and (prefers-reduced-motion: no-preference)');
 
     function updateMode() {
       setIsPinnedMode(query.matches);
@@ -174,21 +174,21 @@ export function SoftwareIndustries() {
   return (
     <section
       ref={wrapperRef}
-      className={cn('bg-[#fbf7f2]', isPinnedMode ? 'relative h-[calc(100svh-80px+410vh)]' : 'px-5 py-20 sm:px-6 sm:py-24 lg:py-28')}
+      className={cn('software-industry-story bg-[#fbf7f2]', isPinnedMode ? 'relative h-[calc(100svh-5rem+410vh)]' : 'px-5 py-20 sm:px-6 sm:py-24 lg:py-28')}
       aria-label="Industries We Build For"
       data-no-reveal
     >
       {isPinnedMode ? (
-        <div ref={frameRef} className="sticky top-20 flex h-[calc(100svh-80px)] items-center overflow-hidden px-6 py-8">
+        <div ref={frameRef} className="industry-story-frame sticky top-20 flex h-[calc(100svh-5rem)] items-center overflow-hidden px-6 py-8">
           <div className="mx-auto grid w-full max-w-container items-center gap-14 lg:grid-cols-[0.38fr_0.62fr] xl:gap-20">
-            <div className="relative min-h-[23rem] max-w-[32rem]" aria-live="polite">
+            <div className="industry-story-copy relative grid min-h-[23rem] max-w-[32rem]" aria-live="polite">
               {industries.map((industry, index) => {
                 const isActive = index === activeIndex;
 
                 return (
                   <article
                     key={industry.id}
-                    className={cn('absolute inset-0 flex flex-col justify-center transition-all duration-500 ease-out', isActive ? 'translate-y-0 opacity-100' : index < activeIndex ? 'pointer-events-none -translate-y-6 opacity-0' : 'pointer-events-none translate-y-6 opacity-0')}
+                    className={cn('[grid-area:1/1] flex flex-col justify-center transition-all duration-500 ease-out', isActive ? 'translate-y-0 opacity-100' : index < activeIndex ? 'pointer-events-none -translate-y-6 opacity-0' : 'pointer-events-none translate-y-6 opacity-0')}
                     aria-hidden={!isActive}
                   >
                     <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase leading-none tracking-normal text-[#f25a05]">
@@ -212,7 +212,7 @@ export function SoftwareIndustries() {
 
             <div className="relative">
               <div className="absolute -inset-6 rounded-[2rem] bg-[radial-gradient(circle_at_66%_38%,rgb(242_90_5/0.15),transparent_62%)]" aria-hidden="true" />
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] border border-[#ead8c8] bg-[#fffaf5] shadow-[0_30px_80px_rgb(63_45_30/0.16)]">
+              <div className="relative aspect-[4/3] max-h-[calc(100svh-9rem)] overflow-hidden rounded-[1.75rem] border border-[#ead8c8] bg-[#fffaf5] shadow-[0_30px_80px_rgb(63_45_30/0.16)]">
                 <div className="pointer-events-none absolute -left-4 bottom-4 z-10 text-[7rem] font-semibold leading-none text-white/30 mix-blend-overlay" aria-hidden="true">{String(activeIndex + 1).padStart(2, '0')}</div>
                 {industries.map((industry, index) => (
                   <img

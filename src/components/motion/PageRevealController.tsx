@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 const sectionSelector = 'main > section, main > article, main [data-scroll-reveal]';
 const revealItemSelector = ':scope > div [class~="grid"] > *, :scope > div [class*="lg:grid"] > *';
 const directions = ['up', 'left', 'right'] as const;
+const skipSelector = '[data-scroll-reveal-skip="true"], [data-no-reveal]';
 
 type RevealDirection = (typeof directions)[number];
 
@@ -50,11 +51,12 @@ export function PageRevealController() {
               }
             });
           },
-          { rootMargin: '0px 0px -12% 0px', threshold: 0.16 },
+          // A percentage threshold can never be reached by sections taller than the viewport.
+          { rootMargin: '0px 0px -48px 0px', threshold: 0 },
         );
 
     function register(element: HTMLElement, direction: RevealDirection, delay = 0) {
-      if (observed.has(element) || element.closest('[data-scroll-reveal-skip="true"]')) return;
+      if (observed.has(element) || element.closest(skipSelector)) return;
 
       observed.add(element);
       setRevealDirection(element, direction);
@@ -72,11 +74,14 @@ export function PageRevealController() {
       const sections = Array.from(root.querySelectorAll<HTMLElement>(sectionSelector));
 
       sections.forEach((section, sectionIndex) => {
+        if (section.closest(skipSelector)) return;
+
         const sectionDirection = section.dataset.scrollReveal as RevealDirection | undefined;
         register(section, sectionDirection ?? directions[sectionIndex % directions.length], 120);
 
         const items = Array.from(section.querySelectorAll<HTMLElement>(revealItemSelector));
         items.slice(0, 12).forEach((item, itemIndex) => {
+          if (item.closest(skipSelector)) return;
           item.classList.add('scroll-reveal-item');
           register(item, getItemDirection(item), Math.min(180 + itemIndex * 120, 660));
         });

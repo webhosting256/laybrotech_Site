@@ -6,7 +6,7 @@ type PlaceholderPageProps = {
 
 export function PlaceholderPage({ title }: PlaceholderPageProps) {
   return (
-    <Section>
+    <Section className="flex min-h-[100vh] items-center">
       <h1 className="type-h1 text-balance">{title}</h1>
     </Section>
   );

@@ -187,12 +187,12 @@ export function ContactPage() {
 
 function ContactHero() {
   return (
-    <section className="relative isolate min-h-[90svh] overflow-hidden bg-[#171717]" aria-labelledby="contact-hero-heading">
+    <section className="relative isolate min-h-[100vh] overflow-hidden bg-[#171717]" aria-labelledby="contact-hero-heading">
       <img className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]" src={heroImage} alt="Business professionals discussing digital project support on a laptop." fetchPriority="high" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(8,8,8,0.98)_0%,rgba(8,8,8,0.90)_46%,rgba(8,8,8,0.72)_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(8,8,8,0.82)_0%,rgba(8,8,8,0.28)_52%,rgba(8,8,8,0.64)_100%)]" />
 
-      <div className="mx-auto flex min-h-[90svh] w-full max-w-container items-center px-6 py-20 sm:px-8 lg:px-16">
+      <div className="mx-auto flex min-h-[100vh] w-full max-w-container items-center px-6 py-20 sm:px-8 lg:px-16">
         <div className="max-w-[49rem]">
           <p className="type-eyebrow">Contact Laybrotech</p>
           <h1 id="contact-hero-heading" className="mt-5 text-[2.45rem] font-semibold leading-[1.08] text-[#fffaf5] sm:text-[3.35rem] lg:text-[4.15rem]">

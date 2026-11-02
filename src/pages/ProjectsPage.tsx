@@ -35,7 +35,7 @@ function ProjectsHero() {
       <div className="absolute left-0 top-0 -z-10 h-px w-full bg-gradient-to-r from-transparent via-white/18 to-transparent" aria-hidden="true" />
       <div className="absolute bottom-0 right-0 -z-10 h-[22rem] w-[22rem] rounded-full bg-[#f25a05]/10 blur-3xl" aria-hidden="true" />
 
-      <div className="mx-auto grid min-h-[90svh] w-full max-w-container items-center gap-12 px-5 py-20 sm:px-6 lg:grid-cols-[0.47fr_0.53fr] lg:py-24">
+      <div className="mx-auto grid min-h-[100vh] w-full max-w-container items-center gap-12 px-5 py-20 sm:px-6 lg:grid-cols-[0.47fr_0.53fr] lg:py-24">
         <div className="max-w-[43rem]">
           <p className="type-eyebrow">Our Work</p>
           <h1 id="projects-hero-heading" className="mt-5 text-[2.45rem] font-semibold leading-[1.08] text-[#fffaf5] sm:text-[3.35rem] lg:text-[4.15rem]">

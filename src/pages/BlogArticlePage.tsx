@@ -1,4 +1,4 @@
-﻿import { type FormEvent, type ReactNode, useEffect, useState } from 'react';
+import { type FormEvent, type ReactNode, useEffect, useState } from 'react';
 import { AlertCircle, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 
@@ -143,7 +143,7 @@ function BlogDetailHero({ post, category }: { post: PublicBlogPost; category: Pu
   const heroImage = post.featured_image_url || blogHeroImage;
 
   return (
-    <section className="relative isolate flex min-h-[90vh] items-center justify-center overflow-hidden bg-[#111111] px-5 py-24 text-center sm:px-6 lg:px-8" aria-label="Article header">
+    <section className="relative isolate flex min-h-[100vh] items-center justify-center overflow-hidden bg-[#111111] px-5 py-24 text-center sm:px-6 lg:px-8" aria-label="Article header">
       <div className="absolute inset-0 -z-20 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} aria-hidden="true" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0.76),rgba(0,0,0,0.84)),radial-gradient(circle_at_center,rgba(242,90,5,0.16),rgba(0,0,0,0)_42%)]" aria-hidden="true" />
       <div className="mx-auto flex w-full max-w-[920px] flex-col items-center">

@@ -73,9 +73,9 @@ export function BrandLogos() {
       <div className="relative left-1/2 mt-9 w-screen -translate-x-1/2 sm:mt-10 lg:mt-12" data-no-reveal>
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-white to-transparent sm:w-16" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-white to-transparent sm:w-16" />
-        <BrandLogoMarquee logos={brandLogoRowOne} direction="left" duration="78s" />
+        <BrandLogoMarquee logos={brandLogoRowOne} direction="left" duration="240s" />
         <div className="mt-3 sm:mt-4">
-          <BrandLogoMarquee logos={brandLogoRowTwo} direction="right" duration="86s" offset />
+          <BrandLogoMarquee logos={brandLogoRowTwo} direction="right" duration="220s" offset />
         </div>
       </div>
     </section>

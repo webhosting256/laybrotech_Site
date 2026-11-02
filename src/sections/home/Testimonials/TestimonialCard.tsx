@@ -36,6 +36,20 @@ type TestimonialAvatarProps = {
 };
 
 export function TestimonialAvatar({ testimonial, className }: TestimonialAvatarProps) {
+  if (testimonial.avatarImage) {
+    return (
+      <img
+        className={cn('shrink-0 rounded-full object-cover ring-4 ring-white', className)}
+        src={testimonial.avatarImage}
+        alt={testimonial.name}
+        width={64}
+        height={64}
+        loading="lazy"
+        decoding="async"
+      />
+    );
+  }
+
   return (
     <div
       className={cn(
