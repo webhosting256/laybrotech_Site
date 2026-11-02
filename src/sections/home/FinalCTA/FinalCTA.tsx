@@ -7,6 +7,7 @@ type FinalCTAProps = {
   primaryHref?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
+  showSecondary?: boolean;
 };
 
 export function FinalCTA({
@@ -15,6 +16,7 @@ export function FinalCTA({
   primaryHref = '/contact',
   secondaryLabel = 'Talk to Sales',
   secondaryHref = '/contact',
+  showSecondary = true,
 }: FinalCTAProps) {
   return (
     <section className="relative z-10 bg-transparent px-5 pb-16 pt-4 sm:px-6 sm:pb-20 lg:pb-28" aria-labelledby="final-cta-heading">
@@ -32,13 +34,13 @@ export function FinalCTA({
               {primaryLabel}
               <ArrowRight className="size-4 transition-transform duration-smooth group-hover:translate-x-1" aria-hidden="true" />
             </Link>
-            <Link
+            {showSecondary && <Link
               className="group inline-flex items-center justify-center gap-2 rounded-button border border-white/42 bg-white/0 px-6 py-4 text-sm font-bold text-[#fffaf5] transition-colors duration-smooth hover:bg-white/10"
               to={secondaryHref}
             >
               {secondaryLabel}
               <ArrowRight className="size-4 transition-transform duration-smooth group-hover:translate-x-1" aria-hidden="true" />
-            </Link>
+            </Link>}
           </div>
         </div>
       </div>

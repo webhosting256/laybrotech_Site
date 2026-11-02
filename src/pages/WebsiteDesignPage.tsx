@@ -1,4 +1,5 @@
 import { Footer } from '@/components/layout/Footer';
+import { whatsappHref } from '@/lib/contact';
 import { FAQ } from '@/sections/home/FAQ';
 import { FinalCTA } from '@/sections/home/FinalCTA';
 import { Testimonials } from '@/sections/home/Testimonials';
@@ -17,13 +18,13 @@ export function WebsiteDesignPage() {
   return (
     <>
       <WebsiteDesignHero />
+      <WebsiteDesignPricing />
       <WebsiteDesignTrustBar />
       <DesignedToPerform />
       <WhoThisIsFor />
       <WebsiteDesignServices />
       <WebsiteDesignPortfolio />
       <WebsiteDesignProcess />
-      <WebsiteDesignPricing />
       <WebsitePostLaunchSupport />
       <Testimonials
         eyebrow="Website Design Testimonials"
@@ -39,10 +40,9 @@ export function WebsiteDesignPage() {
       />
       <FinalCTA
         heading="Ready to Build a Website That Works for Your Business?"
-        primaryLabel="Start Your Website"
-        primaryHref="/contact"
-        secondaryLabel="Talk to Sales"
-        secondaryHref="/contact"
+        primaryLabel="Start Your Project"
+        primaryHref={whatsappHref}
+        showSecondary={false}
       />
       <Footer />
     </>

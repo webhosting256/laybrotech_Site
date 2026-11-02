@@ -2,6 +2,7 @@ import { ArrowRight, Check } from 'lucide-react';
 
 import { ButtonLink } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
+import { whatsappHref } from '@/lib/contact';
 
 type WebsiteDesignPackage = {
   name: string;
@@ -99,6 +100,9 @@ export function WebsiteDesignPricing() {
         <p className="mx-auto mt-8 max-w-[46rem] text-center text-sm leading-6 text-[#766e67]">
           Project requirements may vary. Final scope and pricing are confirmed after discussing your website needs.
         </p>
+        <p className="mx-auto mt-3 max-w-[46rem] text-center text-sm leading-6 text-[#766e67]">
+          For advanced email providers such as Google Workspace, Zoho, and Microsoft 365, their per-user package prices apply.
+        </p>
       </div>
     </section>
   );
@@ -138,11 +142,11 @@ function WebsiteDesignPricingCard({ item }: { item: WebsiteDesignPackage }) {
                 ? 'bg-[#f25a05] text-white hover:bg-[#d94f04]'
                 : 'border border-[#f25a05] !bg-transparent !text-[#f25a05] hover:!bg-[#fff4ed] hover:!text-[#d94f04]',
             )}
-            href="/contact"
+            href={whatsappHref}
             rightIcon={<ArrowRight className="transition-transform duration-smooth group-hover:translate-x-1" />}
             size="lg"
           >
-            Start Your Website
+            Start Your Project
           </ButtonLink>
         </div>
       </div>

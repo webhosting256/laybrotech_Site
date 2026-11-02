@@ -2,6 +2,7 @@ import { ArrowRight, Check } from 'lucide-react';
 
 import heroImage from '@/assets/images/website-design-hero-banner.webp';
 import { ButtonLink } from '@/components/ui/Button';
+import { whatsappHref } from '@/lib/contact';
 
 const heroPoints = ['Mobile Responsive', 'SEO-Ready Structure', 'Conversion-Focused Design'];
 
@@ -37,16 +38,8 @@ export function WebsiteDesignHero() {
           </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <ButtonLink className="h-12 w-full text-[#fff] sm:h-14 sm:w-auto" href="/contact" rightIcon={<ArrowRight />} size="lg">
-              Start Your Website
-            </ButtonLink>
-            <ButtonLink
-              className="h-12 w-full border-2 border-white/90 !bg-transparent !text-white hover:border-white hover:!bg-white/10 hover:!text-white sm:h-14 sm:w-auto"
-              href="/projects"
-              variant="secondary"
-              size="lg"
-            >
-              View Our Work
+            <ButtonLink className="h-12 w-full text-[#fff] sm:h-14 sm:w-auto" href={whatsappHref} rightIcon={<ArrowRight />} size="lg">
+              Start Your Project
             </ButtonLink>
           </div>
         </div>

@@ -24,7 +24,7 @@ export const hostingPlans: HostingPlan[] = [
     name: 'Starter Hosting',
     badge: 'Starting Plan',
     audience: 'Simple, reliable hosting for small websites, portfolios, and new businesses.',
-    pricing: 'Contact for pricing',
+    pricing: 'UGX 700,000',
     cta: 'Get Starter Hosting',
     href: '/contact',
     featureGroups: [
@@ -59,7 +59,7 @@ export const hostingPlans: HostingPlan[] = [
     name: 'Business Hosting',
     badge: 'Most Popular',
     audience: 'More power, storage, and support for growing business websites and organisations.',
-    pricing: 'Contact for pricing',
+    pricing: 'UGX 1,500,000',
     cta: 'Choose Business Hosting',
     href: '/contact',
     recommended: true,
@@ -95,7 +95,7 @@ export const hostingPlans: HostingPlan[] = [
     name: 'Enterprise Hosting',
     badge: 'Business Ready',
     audience: 'Advanced hosting resources for high-traffic websites, large organisations, and demanding platforms.',
-    pricing: 'Contact for pricing',
+    pricing: 'UGX 2,500,000',
     cta: 'Talk to Sales',
     href: '/contact',
     featureGroups: [

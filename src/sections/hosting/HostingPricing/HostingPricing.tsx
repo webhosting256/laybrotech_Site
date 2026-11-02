@@ -24,6 +24,9 @@ export function HostingPricing() {
             <PlanCard key={plan.name} plan={plan} />
           ))}
         </div>
+        <p className="mx-auto mt-8 max-w-[46rem] text-center text-sm leading-6 text-[#766e67]">
+          For advanced email providers such as Google Workspace, Zoho, and Microsoft 365, their per-user package prices apply.
+        </p>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { whatsappHref } from '@/lib/contact';
 
 import websiteDesignGraphic from '@/assets/Web design.webp';
 
@@ -28,10 +28,10 @@ export function DesignedToPerform() {
               ))}
             </ul>
 
-            <Link className="group mt-10 inline-flex w-fit items-center gap-2 text-sm font-bold text-[#f25a05] transition-colors duration-smooth hover:text-[#d94f04]" to="/contact">
+            <a className="group mt-10 inline-flex w-fit items-center gap-2 text-sm font-bold text-[#f25a05] transition-colors duration-smooth hover:text-[#d94f04]" href={whatsappHref}>
               Start Your Project
               <ArrowRight className="size-4 transition-transform duration-smooth group-hover:translate-x-1" aria-hidden="true" />
-            </Link>
+            </a>
           </div>
 
           <div className="relative isolate flex min-h-[24rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[#f25a05] px-5 py-8 sm:px-8 lg:min-h-[33rem] lg:px-9" aria-hidden="true">
