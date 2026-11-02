@@ -9,7 +9,8 @@ export function PageLayout() {
     <div className="min-h-dvh bg-white text-brand-text-primary antialiased">
       <Header />
       <PageRevealController />
-      <main>
+      {/* Contain sideways reveal animations without creating a scroll container. */}
+      <main className="overflow-x-clip">
         <Outlet />
       </main>
       <FloatingWhatsAppButton />

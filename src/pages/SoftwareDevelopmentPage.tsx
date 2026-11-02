@@ -1,7 +1,6 @@
 import { Footer } from '@/components/layout/Footer';
 import { FAQ } from '@/sections/home/FAQ';
 import { FinalCTA } from '@/sections/home/FinalCTA';
-import { Testimonials } from '@/sections/home/Testimonials';
 import {
   SoftwareBenefits,
   SoftwareDevelopmentHero,
@@ -13,7 +12,7 @@ import {
   SoftwareWhatWeBuild,
   SoftwareWhyChoose,
 } from '@/sections/software-development';
-import { softwareFaqItems, softwareTestimonials } from '@/sections/software-development/softwareDevelopmentPageContent';
+import { softwareFaqItems } from '@/sections/software-development/softwareDevelopmentPageContent';
 
 export function SoftwareDevelopmentPage() {
   return (
@@ -27,12 +26,6 @@ export function SoftwareDevelopmentPage() {
       <SoftwareTechnologies />
       <SoftwareTechnologyStack />
       <SoftwareBenefits />
-      <Testimonials
-        eyebrow="Software Development Testimonials"
-        heading="Built Around Real Business Needs."
-        copy="Hear from organisations that have worked with Laybrotech to improve workflows, operations, and digital systems."
-        items={softwareTestimonials}
-      />
       <FAQ
         eyebrow="Software Development FAQ"
         heading="Software Development Questions, Answered."

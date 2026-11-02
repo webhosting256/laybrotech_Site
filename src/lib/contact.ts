@@ -1,1 +1,1 @@
-export const whatsappHref = 'https://wa.me/256200923164';
+export const whatsappHref = 'https://wa.me/256754699635';
