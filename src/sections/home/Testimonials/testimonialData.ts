@@ -1,4 +1,4 @@
-﻿export type Testimonial = {
+export type Testimonial = {
   id: string;
   name: string;
   meta: string;
@@ -12,81 +12,68 @@
 
 export const testimonials: Testimonial[] = [
   {
-    id: 'grace-website-design',
-    name: 'Grace N.',
-    meta: 'Business Owner',
-    initials: 'GN',
+    id: 'amos-booklines-africa',
+    name: 'Amos',
+    meta: 'Director, Booklines Africa',
+    initials: 'A',
     avatarTone: 'orange',
     rating: 5,
-    title: 'A professional website that finally reflects our brand.',
+    title: 'They are quick to respond to inquiries',
     excerpt:
-      'Laybrotech listened carefully, explained every step, and delivered a clean website that our customers can navigate with confidence.',
+      'I have worked with Laybrotech since 2019 and all this time i have not had any issues with them.',
     fullReview:
-      'Laybrotech listened carefully, explained every step, and delivered a clean website that our customers can navigate with confidence. The communication was professional from the first consultation to launch, and the final result made our business look more credible online. We especially appreciated how responsive the team was when we needed adjustments.',
+      'I have worked with Laybrotech since 2019 and all this time i have not had any issues with them. They are quick to respond to inquiries and are professional in their interaction with my team. I would recommend them to any one in need of their services',
   },
   {
-    id: 'daniel-hosting-support',
-    name: 'Daniel K.',
-    meta: 'Operations Lead',
-    initials: 'DK',
+    id: 'sandra-hindfeet-project',
+    name: 'Sandra',
+    meta: 'Director, Hindfeet Project',
+    initials: 'S',
     avatarTone: 'charcoal',
     rating: 5,
-    title: 'Reliable hosting and support when we needed it.',
+    title: 'They always respond timely',
     excerpt:
-      'Our website has been faster and more stable since moving to Laybrotech hosting, and support has been easy to reach.',
+      'I have interacted with especially Ronnie for my website redesign, hosting and email and he has been very helpful every time.',
     fullReview:
-      'Our website has been faster and more stable since moving to Laybrotech hosting, and support has been easy to reach. The team helped us understand what was changing, handled the migration carefully, and made sure everything was working before handing it over. It has given us more confidence in our online presence.',
+      'I have interacted with especially Ronnie for my website redesign, hosting and email and he has been very helpful every time. They always respond timely when i need some help. Thank you, Laybrotech team, for your service.',
   },
   {
-    id: 'aisha-business-email',
-    name: 'Aisha M.',
-    meta: 'Client',
-    initials: 'AM',
+    id: 'paul-nyenga-hospital',
+    name: 'Paul',
+    meta: 'Procurement, Nyenga Hospital',
+    initials: 'P',
     avatarTone: 'warm',
     rating: 5,
-    title: 'Clear setup and a more professional online identity.',
+    title: 'They are the best in Uganda',
     excerpt:
-      'The business email setup was smooth, and our team now communicates with clients using branded addresses.',
+      'They restored the website, sorted and moved our all emails and domain and from then we have not faced any other downtime.',
     fullReview:
-      'The business email setup was smooth, and our team now communicates with clients using branded addresses. Laybrotech made the process simple, explained how everything worked, and helped us avoid the confusion we had with our previous setup. It was a small change that made our company feel much more professional.',
+      'Our website was having issues with the previous developer and it was always on and off so we got recommended Laybrotech. They restored the website, sorted and moved our all emails and domain and from then we have not faced any other downtime. They are the best in Uganda',
   },
   {
-    id: 'peter-software-tools',
-    name: 'Peter O.',
-    meta: 'Organisation Manager',
-    initials: 'PO',
+    id: 'isaac-luba-properties',
+    name: 'Isaac',
+    meta: 'Manager, Luba properties',
+    initials: 'I',
     avatarTone: 'green',
     rating: 5,
-    title: 'They understood the workflow we needed.',
+    title: 'Quality, high-end solutions on time',
     excerpt:
-      'Laybrotech helped us think through the system before building, which made the final digital tool much easier for our team to use.',
+      "I'm highly impressed by the highly professional IT support offered by Laybrotech it delivers quality, high-end solutions on time.",
     fullReview:
-      'Laybrotech helped us think through the system before building, which made the final digital tool much easier for our team to use. They asked good questions, simplified the process, and delivered something that matched the way our organisation actually works. The support after delivery was also very helpful.',
+      "I'm highly impressed by the highly professional IT support offered by Laybrotech it delivers quality, high-end solutions on time. Their commitment to excellence, reliability, and customer satisfaction makes them a company I would confidently recommend to any business seeking corporate IT services.",
   },
   {
-    id: 'lydia-digital-growth',
-    name: 'Lydia W.',
-    meta: 'Marketing Coordinator',
-    initials: 'LW',
+    id: 'hon-dr-agness-apea',
+    name: 'Hon Dr Agness Apea',
+    meta: 'Personal Website',
+    initials: 'AA',
     avatarTone: 'orange',
     rating: 5,
-    title: 'A calm, strategic approach to digital growth.',
+    title: 'They are the best designers',
     excerpt:
-      'The team helped us clarify our message online and gave practical guidance for improving search visibility and customer enquiries.',
+      'They are the best designers and they are very professional. A friend recommended them and i was not disappointed.',
     fullReview:
-      'The team helped us clarify our message online and gave practical guidance for improving search visibility and customer enquiries. What stood out most was their calm, strategic approach. They did not overwhelm us with jargon, and they focused on the things that would actually help the business grow.',
-  },
-  {
-    id: 'samuel-domain-launch',
-    name: 'Samuel T.',
-    meta: 'Startup Founder',
-    initials: 'ST',
-    avatarTone: 'charcoal',
-    rating: 5,
-    title: 'Everything we needed to launch in one place.',
-    excerpt:
-      'From domain registration to hosting and website launch, Laybrotech made the process feel organised and manageable.',
-    fullReview:
-      'From domain registration to hosting and website launch, Laybrotech made the process feel organised and manageable. As a new business, we needed guidance and a partner who could handle the technical pieces without making the process stressful. Laybrotech gave us that support and delivered exactly what we needed to get online.',
+      'They are the best designers and they are very professional. A friend recommended them and i was not disappointed. Thank you Laybrotech for pulling off the design i had in my mind',
   },
 ];
