@@ -4,6 +4,9 @@ import lmkVenturesHealthcareImage from '@/assets/images/Portfolio/LMK-Ventures-H
 import mealCardDinnerImage from '@/assets/images/Portfolio/Meal-Card-Dinner.webp';
 import naroHoldingsImage from '@/assets/images/Portfolio/NARO-Holdings-Limited-NHL.webp';
 import webhosting256Image from '@/assets/images/Portfolio/Webhosting256.webp';
+import agnesApeaImage from '@/assets/images/Portfolio/Agnes Apea.webp';
+import brandlinkVenturesImage from '@/assets/images/Portfolio/Brandlink Ventures.webp';
+import tanganyikaToursImage from '@/assets/images/Portfolio/Tanganyika Tours.webp';
 
 export type Project = {
   name: string;
@@ -154,10 +157,64 @@ export const projects: Project[] = [
     outcomes: ['Visual-first presentation', 'Simple interaction flow', 'Responsive interface'],
     tags: ['Digital Experience', 'Food', 'Interface Design'],
   },
+  {
+    name: 'Agnes Apea',
+    slug: 'agnes-apea',
+    category: 'Personal Website',
+    shortDescription: 'A personal website presenting leadership, policy, and community development work.',
+    description: 'A personal website for Dr. Agnes Atim Apea, presenting her profile, advisory services, publications, and community development work.',
+    image: agnesApeaImage,
+    imageAlt: 'Agnes Apea personal website screenshot',
+    liveUrl: 'https://agnesapea.com/',
+    industry: 'Leadership & Policy',
+    services: ['Website Design'],
+    platform: 'Personal Website',
+    challenge: 'Presenting a professional profile alongside policy, advisory, and community development work.',
+    solution: 'A personal website with dedicated navigation for her profile, services, publications, and media highlights.',
+    overview: ['A personal website showcasing Dr. Agnes Atim Apea and her work in development economics, policy leadership, and community development.'],
+    outcomes: [],
+    tags: ['Personal Website', 'Leadership', 'Community Development'],
+  },
+  {
+    name: 'Brandlink Ventures',
+    slug: 'brandlink-ventures',
+    category: 'Advertising / Corporate Website',
+    shortDescription: 'A visual website showcasing outdoor advertising services.',
+    description: 'A corporate website presenting Brandlink Ventures and its outdoor advertising services through bold imagery and clear service information.',
+    image: brandlinkVenturesImage,
+    imageAlt: 'Brandlink Ventures outdoor advertising website screenshot',
+    liveUrl: 'https://brandlinkventures.com/',
+    industry: 'Advertising',
+    services: ['Website Design'],
+    platform: 'Corporate Website',
+    challenge: 'Presenting outdoor advertising services and the company behind them.',
+    solution: 'A visual company website with service, team, and contact information.',
+    overview: ['A corporate website for Brandlink Ventures, showcasing its outdoor advertising offering and brand presence.'],
+    outcomes: [],
+    tags: ['Corporate Website', 'Advertising', 'Brand Presentation'],
+  },
+  {
+    name: 'Tanganyika Tours',
+    slug: 'tanganyika-tours',
+    category: 'Tourism / Travel Website',
+    shortDescription: 'A travel website showcasing safari tours and travel services.',
+    description: 'A tourism website presenting Tanganyika Tours, safari experiences, destinations, and travel services with clear enquiry options.',
+    image: tanganyikaToursImage,
+    imageAlt: 'Tanganyika Tours safari and travel website screenshot',
+    liveUrl: 'https://tanganyikatours.com/',
+    industry: 'Tourism & Travel',
+    services: ['Website Design'],
+    platform: 'Travel Website',
+    challenge: 'Presenting safari experiences alongside destinations and travel services.',
+    solution: 'A travel website with destination and safari navigation, enquiries, and flight-booking links.',
+    overview: ['A tourism and travel website for Tanganyika Tours, featuring safari tours, destination discovery, and travel services.'],
+    outcomes: [],
+    tags: ['Tourism Website', 'Safari Tours', 'Travel Services'],
+  },
 ];
 
-export const portfolioRowOneProjects: Project[] = projects.slice(0, 3);
-export const portfolioRowTwoProjects: Project[] = projects.slice(3, 6);
+export const portfolioRowOneProjects: Project[] = projects.slice(0, Math.ceil(projects.length / 2));
+export const portfolioRowTwoProjects: Project[] = projects.slice(Math.ceil(projects.length / 2));
 export const featuredPortfolioProjects: Project[] = projects.filter((project) => project.featured);
 export const caseStudyProjects: Project[] = projects.filter((project) => project.caseStudyFeatured).slice(0, 2);
 

@@ -179,7 +179,7 @@ export function ContactPage() {
         </div>
       </main>
       <ContactMap />
-      <FinalCTA heading="Have a Project in Mind?" primaryLabel="Start Your Project" primaryHref="/contact#contact-form" secondaryLabel="Talk to Sales" secondaryHref={phoneHref} />
+      <FinalCTA heading="Have a Project in Mind?" primaryLabel="Start Your Project" primaryHref={whatsappHref} showSecondary={false} />
       <Footer />
     </>
   );
